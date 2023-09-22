@@ -83,7 +83,7 @@ body {
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	height: inherit;
+	height: 100%;
 	opacity: 0.6;
 	background-color: black;
 }
@@ -168,7 +168,7 @@ body {
 .lot {
 	position: relative;
 	min-width: 430px;
-	height: 450px;
+	min-height: 450px;
 	padding: 50px 40px;
 	background-position: center;
 	background-size: cover;
@@ -193,9 +193,6 @@ body {
 	height: 100%;
 	position: relative;
 	z-index: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 	color: white;
 }
 
@@ -227,8 +224,7 @@ body {
 	line-height: 24px;
 }
 
-.lots__link {
-	display: inline-block;
+.lot__link {
 	padding-top: 31px;
 	padding-left: 38px;
 	font-size: 20px;
