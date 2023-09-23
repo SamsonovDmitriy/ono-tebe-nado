@@ -1,13 +1,7 @@
 body {
 	max-width: 1440px;
 	margin: auto;
-	font-family: Raleway, sans-serif;
 	font-weight: 400;
-}
-
-.content-section {
-	box-sizing: border-box;
-	margin: auto;
 }
 
 .header {
@@ -22,7 +16,6 @@ body {
 
 .header__menu-list {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 	gap: 32px;
 	padding-top: 42px;
@@ -52,7 +45,6 @@ body {
 	font-size: 18px;
 	font-style: normal;
 	line-height: 24.3px;
-	word-wrap: break-word;
 }
 
 .header__address__item {
@@ -69,7 +61,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 135px;
-	width: 1440px;
+	max-width: 1440px;
 	height: 100%;
 	padding: 165px 50px 50px;
 	background-image: url(../images/cover.jpg);
@@ -79,8 +71,7 @@ body {
 
 .dark_overlay {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset: 0;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -95,7 +86,6 @@ body {
 	flex-direction: column;
 	gap: 20px;
 	color: white;
-	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 100px;
 	text-transform: uppercase;
@@ -103,7 +93,7 @@ body {
 
 .accent-span {
 	display: block;
-	line-height: 115px;
+	line-height: 115%;
 	letter-spacing: 30px;
 }
 
@@ -112,12 +102,12 @@ body {
 }
 
 .accent-span-center {
-	line-height: 100px;
+	line-height: 100%;
 	text-align: center;
 }
 
 .accent-span-right {
-	line-height: 100px;
+	line-height: 100%;
 	text-align: end;
 }
 
@@ -129,7 +119,6 @@ body {
 	position: relative;
 	z-index: 1;
 	display: flex;
-	flex-direction: row;
 	justify-content: end;
 	align-items: center;
 	gap: 78px;
@@ -159,7 +148,6 @@ body {
 
 .lots-list {
 	display: flex;
-	flex-direction: row;
 	gap: 25px;
 	list-style-type: none;
 	flex-wrap: wrap;
@@ -204,14 +192,12 @@ body {
 	padding-bottom: 26px;
 	padding-left: 37px;
 	color: black;
-	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 40px;
 	text-transform: uppercase;
 }
 
 .lot__title {
-	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 26.4px;
@@ -257,7 +243,6 @@ body {
 .about__title {
 	padding-bottom: 100px;
 	color: black;
-	font-family: Raleway, sans-serif;
 	font-weight: 700;
 	font-size: 40px;
 	text-transform: uppercase;
@@ -288,7 +273,6 @@ body {
 
 .footer__links {
 	display: flex;
-	flex-direction: row;
 	gap: 48px;
 	list-style-type: none;
 }
